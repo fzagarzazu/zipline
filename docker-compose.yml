@@ -1,0 +1,8 @@
+zipline:
+  build: ./
+  working_dir: /projects
+  command: /projects/zipline/start_server.sh
+  volumes:
+    - ../:/projects
+  ports:
+    - "8888:8888"
